@@ -6,12 +6,12 @@ local ESP = {
         MaxDistance = math.huge, -- Max Distance for esp to render (IN METERS).
         MaxBoxSize = Vector3.new(5, 5, 0), -- Max size for ESP boxes.
         DestroyOnRemove = true, -- Whether the ESP objects should be deleted when the character is parented to nil, change this if you want.
-        TeamColors = true, -- Whether or not the ESP color is based on team colors.
-        TeamBased = true, -- Whether or not the ESP should render ESP on teammates. 
+        TeamColors = false, -- Whether or not the ESP color is based on team colors.
+        TeamBased = false, -- Whether or not the ESP should render ESP on teammates. 
         BoxTopOffset = Vector3.new(0, 1, 0), -- Offset for where the top of the box should be
         
         Boxes = {
-            Enabled = true,
+            Enabled = false,
             Color = Color3.new(255, 0, 0),
             Thickness = 1,
         },
@@ -28,7 +28,7 @@ local ESP = {
             Outline = true,
         },
         Tracers = {
-            Enabled = true,
+            Enabled = false,
             Thickness = 0,
             Color = Color3.new(255, 0, 0),
         }
